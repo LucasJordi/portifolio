@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef8eda6f.css",
-    "main.js": "/static/js/main.fa93d03f.js",
-    "static/js/787.be55e6d0.chunk.js": "/static/js/787.be55e6d0.chunk.js",
-    "static/media/mobile.jpg": "/static/media/mobile.5045bf89950bd8d8cc90.jpg",
-    "static/media/background.jpg": "/static/media/background.05092abcd84b97826020.jpg",
-    "static/media/arch2.png": "/static/media/arch2.9431e8a1195dac2f963e.png",
-    "static/media/battery-charging-outline.svg": "/static/media/battery-charging-outline.fa65dfa0348968775fde5ad2daabc269.svg",
-    "static/media/volume-medium.svg": "/static/media/volume-medium.8e7a6f5e4f30b97cf3221c573033bd59.svg",
-    "index.html": "/index.html",
-    "static/media/wifi-outline.svg": "/static/media/wifi-outline.c62fc5b62c9fe10cfe6726fdaae2f0f4.svg",
-    "static/media/cafe-outline.svg": "/static/media/cafe-outline.a8dffb3364dbb9555ff01ac00fd4957e.svg",
-    "main.ef8eda6f.css.map": "/static/css/main.ef8eda6f.css.map",
-    "main.fa93d03f.js.map": "/static/js/main.fa93d03f.js.map",
-    "787.be55e6d0.chunk.js.map": "/static/js/787.be55e6d0.chunk.js.map"
+    "main.css": "/portifolio/static/css/main.6359af9c.css",
+    "main.js": "/portifolio/static/js/main.e49804e2.js",
+    "static/js/787.be55e6d0.chunk.js": "/portifolio/static/js/787.be55e6d0.chunk.js",
+    "static/media/mobile.jpg": "/portifolio/static/media/mobile.5045bf89950bd8d8cc90.jpg",
+    "static/media/background.jpg": "/portifolio/static/media/background.05092abcd84b97826020.jpg",
+    "static/media/arch2.png": "/portifolio/static/media/arch2.9431e8a1195dac2f963e.png",
+    "static/media/battery-charging-outline.svg": "/portifolio/static/media/battery-charging-outline.fa65dfa0348968775fde5ad2daabc269.svg",
+    "static/media/volume-medium.svg": "/portifolio/static/media/volume-medium.8e7a6f5e4f30b97cf3221c573033bd59.svg",
+    "index.html": "/portifolio/index.html",
+    "static/media/wifi-outline.svg": "/portifolio/static/media/wifi-outline.c62fc5b62c9fe10cfe6726fdaae2f0f4.svg",
+    "static/media/cafe-outline.svg": "/portifolio/static/media/cafe-outline.a8dffb3364dbb9555ff01ac00fd4957e.svg",
+    "main.6359af9c.css.map": "/portifolio/static/css/main.6359af9c.css.map",
+    "main.e49804e2.js.map": "/portifolio/static/js/main.e49804e2.js.map",
+    "787.be55e6d0.chunk.js.map": "/portifolio/static/js/787.be55e6d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef8eda6f.css",
-    "static/js/main.fa93d03f.js"
+    "static/css/main.6359af9c.css",
+    "static/js/main.e49804e2.js"
   ]
 }
