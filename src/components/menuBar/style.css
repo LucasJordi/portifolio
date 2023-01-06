@@ -1,0 +1,127 @@
+
+
+
+.bar{
+    display: flex;
+    background-color: black;
+    padding: 5px;
+    align-items: center;
+
+    padding-left: 5px;
+    width: 100%;
+    height: 100%;
+}
+.cantos{
+    flex:1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    padding: 0 10px 0 10px;
+}
+.flexRight{
+    justify-content: flex-end;
+}
+.meio{
+    flex:7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textHour{
+    color:white;
+}
+.imgLogo{
+    width: auto;
+    height: 95%;
+}
+.divLogo{
+    height: 100%;
+    width: 30%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.hourPan{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    cursor: pointer;
+    padding: 8px;
+
+}
+.iconCafe{
+    width: 40%;
+}
+.othersPanel{
+    flex:1;
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.hourPan:hover{
+    background-color: rgba(108, 122, 137, 0.3);
+
+
+}
+.othersPanel:hover{
+    background-color: rgba(108, 122, 137, 0.3);
+
+
+}
+.wifiAndOthers{
+    display: flex;
+    height: 100%;
+    border-radius: 20px;
+    flex:2;
+    justify-content: space-around;
+    align-items: center;
+}
+.wifiAndOthers:hover{
+    background-color: rgba(108, 122, 137, 0.3);
+
+
+}
+.iconW{
+    color: white;
+    width: 20%;
+    
+    cursor: pointer;
+}
+.menuClick{    
+    display: none;
+    position: absolute;
+    min-height: 250px;
+    width: 200px;
+    background-color: #303030;
+    border-radius: 20px;
+    top:5vh;
+    left: 3vw;
+
+}
+.none{
+    
+}
+.divLogo:hover {
+    background-color: rgba(108, 122, 137, 0.3);
+
+
+   
+    
+}
+.divLogo:hover + .menuClick{
+    display: block;
+    
+
+
+   
+    
+}
