@@ -57,6 +57,8 @@
 }
 .iconCafe{
     width: 40%;
+    color: white;
+    cursor: pointer;
 }
 .othersPanel{
     flex:1;
