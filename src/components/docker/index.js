@@ -8,6 +8,10 @@ import jupiterlnIcon from "../../assets/apps/jupiterln.png"
 import calculadoraIcon from "../../assets/apps/calculadoraNutri.png"
 import preTaxaIcon from "../../assets/apps/pretaxa.png"
 import appsIconPng from "../../assets/apps/apps.png"
+import gitIcon from "../../assets/apps/git.png"
+import terminalIcon from "../../assets/apps/utilities-terminal.png"
+import breveIcon from "../../assets/apps/breve.png"
+
 import { Properties } from "../properties"
 
 export const Docker=(props)=>{
@@ -16,8 +20,8 @@ export const Docker=(props)=>{
 
     const [apps,setApps]=useState([
         {
-            name:"Pip Music",
-            desc:"",
+            name:"Pip Music",            
+            desc:"PipMusic é um player de musica que se integra com Google Drive. Com ele é possível se comunicar com musicas em uma pasta compartilhada no drive.",
             id:"1",
             icon:pipMusicIcon,
             made:"React Native",
@@ -25,7 +29,7 @@ export const Docker=(props)=>{
         },
         {
             name:"Jupiter Light novel",
-            desc:"2",
+            desc:"JupiterLn é um leitor de light novels em português para android, gratuito e de código aberto. Baseado nos famosos LNReader e Tachiyomi. Desenvolvido em Ionic/Angular",
             id:"2",
             icon:jupiterlnIcon,
             made:"Ionic Angular",
@@ -33,7 +37,7 @@ export const Docker=(props)=>{
         },
         {
             name:"Preço com taxa",
-            desc:"3",
+            desc:"Gerencie seus gastos com taxas de aplicativos e saiba o quanto deve cobrar para ter lucro.",
             id:"3",
             icon:preTaxaIcon,
             made:"React Native",
@@ -41,77 +45,87 @@ export const Docker=(props)=>{
         },
         {
             name:"Calculadora Nutrição Interativa",
-            desc:"4",
+            desc:"Faça calculos de IMC, gasto energético, fator de correção, divisão de macronutrientes, tabela TACO e muitro mais na palma da sua mão de forma simples e intuitiva.",
             id:"4",
             icon:calculadoraIcon,
             made:"React Native",
             link:"https://play.google.com/store/apps/details?id=com.nutriinterativa.calculadora"
         },
         {
-            name:"",
-            desc:"",
+            name:"Manual de utilização MindSphere Cloud Foundry",
+            desc:"Manual de utilização da plataforma Mindsphere em conjunto com o CloudFoundry",
+            id:"5",
+            icon:gitIcon,
+            made:"Spring Boot",
+            link:"https://github.com/LucasJordi/ManualCloudFoundryMindSphere"
+        },
+        {
+            name:"ScrapNovel to Epub",
+            desc:"Scrap de novels em sites e transformando obra em formato Epub",
+            id:"6",
+            icon:"",
+            made:"Python",
+            link:"https://github.com/LucasJordi/ScrapNoveltoEpub"
+        },
+        {
+            name:"Scrap de Novels para documentos",
+            desc:"Esse código possibilita capturar todos os capítulos de uma novel pré-definida e transformar em documentos separados ( Ainda apenas em txt).",
+            id:"7",
+            icon:"",
+            made:"Python",
+            link:"https://github.com/LucasJordi/NovelToDocument"
+        },
+        {
+            name:"apiNovelFull",
+            desc:"Api feita em Flask para pegar novels do site NovelFull",
+            id:"8",
+            icon:"",
+            made:"Python Flask",
+            link:"https://github.com/LucasJordi/apiNovel"
+        },
+        {
+            name:"SpringOCPP",
+            desc:"Teste de servidor OCPP para integração com estações de carregamento de veículos elétricos",
+            id:"9",
+            icon:"",
+            made:"Spring Boot",
+            link:"https://github.com/LucasJordi/SpringOcppTeste"
+        },
+        {
+            name:"Em breve",
+            desc:"10",
             id:"",
             icon:""
         },
         {
-            name:"",
-            desc:"",
+            name:"Em breve",
+            desc:"11",
             id:"",
             icon:""
         },
         {
-            name:"",
-            desc:"",
+            name:"Em breve",
+            desc:"12",
             id:"",
             icon:""
         },
         {
-            name:"",
-            desc:"",
+            name:"Em breve",
+            desc:"13",
             id:"",
             icon:""
         },
         {
-            name:"",
-            desc:"",
+            name:"Em breve",
+            desc:"14",
             id:"",
             icon:""
         },
         {
-            name:"",
-            desc:"",
-            id:"",
-            icon:""
-        },
-        {
-            name:"",
-            desc:"",
-            id:"",
-            icon:""
-        },
-        {
-            name:"",
-            desc:"",
-            id:"",
-            icon:""
-        },
-        {
-            name:"",
-            desc:"",
-            id:"",
-            icon:""
-        },
-        {
-            name:"",
-            desc:"",
-            id:"",
-            icon:""
-        },
-        {
-            name:"",
-            desc:"",
-            id:"",
-            icon:""
+            name:"Terminal",
+            desc:"Terminal de comandos",
+            id:"terminal",
+            icon:terminalIcon
         },
         {
             name:"Ver todos",
@@ -131,8 +145,12 @@ export const Docker=(props)=>{
             {properties&&<Properties setOpen={setProperties} item={item} />}
             <div className="mainDocker">
                 {
-                    apps.map(element=>(
-                        <div className="divDockerApp" data-name={element.name} onClick={()=>{
+                    apps.map((element,index)=>(
+                        <div key={element.desc+index} className="divDockerApp" data-name={element.name} onClick={()=>{
+                            
+                            if(element.id==="all"||element.id==="terminal"){
+                                return false
+                            }
                             if(element.id===""){
                                 return false
                             }
@@ -144,7 +162,7 @@ export const Docker=(props)=>{
                         }}>
                             {/* <AppsIcon className="iconDocker" /> */}
 
-                            <img src={element.icon} className="iconDocker" />
+                            <img src={element.icon!=""? element.icon: element.id!=""? gitIcon:breveIcon} className="iconDocker" />
 
                         </div>
 

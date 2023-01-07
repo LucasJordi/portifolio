@@ -3,6 +3,7 @@ import "./style.css"
 import {ReactComponent as CloseIcon} from '../../assets/icon/close.svg'
 import pipMusicIcon from "../../assets/apps/pipMusic.png"
 import { useEffect, useState } from "react"
+import gitIcon from "../../assets/apps/git.png"
 export const Properties=(props)=>{
     const [desc,setDesc]=useState({id:"",desc:""})
     useEffect(()=>{
@@ -32,7 +33,7 @@ export const Properties=(props)=>{
             </div>
             <div className="propsContent">
                 <div className="propsContentTop">
-                    <img src={props.item.icon} className="propsIconApp" />
+                    <img src={props.item.icon!=""?props.item.icon:gitIcon} className="propsIconApp" />
                     <h1 className="propsTextTitle">
                         {props.item.name}
                     </h1>
@@ -59,7 +60,7 @@ export const Properties=(props)=>{
                             Descrição
                         </p>
                         <p className="pProps">
-                            {desc.desc}
+                            {props.item.desc}
                         </p>
 
                     </div>

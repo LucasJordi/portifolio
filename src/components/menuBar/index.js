@@ -27,26 +27,32 @@ export const MenuBar=()=>{
     useEffect(()=>{
         
         window.addEventListener("click",(event)=>{
-            if(menu){
+           
+                console.log("passou")
                 try{
                     const element=document.querySelector(".mainMenuTool")
-                    let classes=["mainMenuTool","wifiAndOthers"]
-                    element.childNodes.forEach(element=>{
-                        classes.push(element.className)
-                    })
-                    const classesContain=classes.includes(event.target.className)
-                    console.log(classesContain)
-                    if(menu && !classesContain){
-                        setMenu(false)
+                    
+                    if(element!=null){
+                        let classes=["mainMenuTool","wifiAndOthers"]
+                        element.childNodes.forEach(element=>{
+                            classes.push(element.className)
+                        })
+                        const classesContain=classes.includes(event.target.className)
+                        if(!classesContain){
+                            setMenu(false)
+
+                        }
 
                     }
+                    
 
                 }catch(e){
+                    console.log(e)
                     
                 }
                 
 
-            }
+            
             
         
         })
@@ -79,7 +85,7 @@ export const MenuBar=()=>{
         {float&&<Float text={textFloat}/>}
         {menu && <MenuTools/>}
         <div className="bar">
-            <div class="cantos">
+            <div className="cantos">
                 <div className='divLogo'>
                     <img className='imgLogo' src={logoArch}/>
 
@@ -87,7 +93,7 @@ export const MenuBar=()=>{
             </div>
             <div className="meio">
                 <div >
-                    <p class="textHour hourPan">
+                    <p className="textHour hourPan">
                         {formatDate()}
 
                     </p>
@@ -103,7 +109,7 @@ export const MenuBar=()=>{
 
                 </div>
                 <div className='othersPanel'>
-                    <p class="textHour">
+                    <p className="textHour">
                         pt
 
                     </p>
