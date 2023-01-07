@@ -1,22 +1,36 @@
 {
   "files": {
-    "main.css": "/portifolio/static/css/main.6359af9c.css",
-    "main.js": "/portifolio/static/js/main.e49804e2.js",
+    "main.css": "/portifolio/static/css/main.390a17b0.css",
+    "main.js": "/portifolio/static/js/main.091d85e7.js",
     "static/js/787.be55e6d0.chunk.js": "/portifolio/static/js/787.be55e6d0.chunk.js",
     "static/media/mobile.jpg": "/portifolio/static/media/mobile.5045bf89950bd8d8cc90.jpg",
     "static/media/background.jpg": "/portifolio/static/media/background.05092abcd84b97826020.jpg",
+    "static/media/jupiterln.png": "/portifolio/static/media/jupiterln.c97776ed1438b8110737.png",
+    "static/media/pipMusic.png": "/portifolio/static/media/pipMusic.366fc7561c57eca02989.png",
+    "static/media/pretaxa.png": "/portifolio/static/media/pretaxa.4bb1290af7e917e3c4fe.png",
+    "static/media/calculadoraNutri.png": "/portifolio/static/media/calculadoraNutri.f268272af6590c089fab.png",
     "static/media/arch2.png": "/portifolio/static/media/arch2.9431e8a1195dac2f963e.png",
+    "static/media/apps.png": "/portifolio/static/media/apps.5c857bf82b2ee5d36f0f.png",
     "static/media/battery-charging-outline.svg": "/portifolio/static/media/battery-charging-outline.fa65dfa0348968775fde5ad2daabc269.svg",
+    "static/media/settings.svg": "/portifolio/static/media/settings.91e822e5c3ae4fe7802e37acc7da8583.svg",
+    "static/media/camera-outline.svg": "/portifolio/static/media/camera-outline.b10ff7db74fd342e0dada1f55965051b.svg",
     "static/media/volume-medium.svg": "/portifolio/static/media/volume-medium.8e7a6f5e4f30b97cf3221c573033bd59.svg",
     "index.html": "/portifolio/index.html",
+    "static/media/bulb-outline.svg": "/portifolio/static/media/bulb-outline.186b2c6f9d8c0e7c84ef0b7d134c4b19.svg",
+    "static/media/apps.svg": "/portifolio/static/media/apps.0248728d6d94a6c65233577c98b92aea.svg",
+    "static/media/power.svg": "/portifolio/static/media/power.35caf460bdb74c8b5056c0dbc5b4e735.svg",
     "static/media/wifi-outline.svg": "/portifolio/static/media/wifi-outline.c62fc5b62c9fe10cfe6726fdaae2f0f4.svg",
     "static/media/cafe-outline.svg": "/portifolio/static/media/cafe-outline.a8dffb3364dbb9555ff01ac00fd4957e.svg",
-    "main.6359af9c.css.map": "/portifolio/static/css/main.6359af9c.css.map",
-    "main.e49804e2.js.map": "/portifolio/static/js/main.e49804e2.js.map",
+    "static/media/cafe.svg": "/portifolio/static/media/cafe.d9639a2f5176ce9e6724c63331672f41.svg",
+    "static/media/cafe-filled.svg": "/portifolio/static/media/cafe-filled.5939c6202eec6b5db459cc7deb651084.svg",
+    "static/media/lock-closed.svg": "/portifolio/static/media/lock-closed.dbd791137d1f2b5904f7f7f6e63f500a.svg",
+    "static/media/close.svg": "/portifolio/static/media/close.e54fd14e2935399deef8fb4b0dda7979.svg",
+    "main.390a17b0.css.map": "/portifolio/static/css/main.390a17b0.css.map",
+    "main.091d85e7.js.map": "/portifolio/static/js/main.091d85e7.js.map",
     "787.be55e6d0.chunk.js.map": "/portifolio/static/js/787.be55e6d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6359af9c.css",
-    "static/js/main.e49804e2.js"
+    "static/css/main.390a17b0.css",
+    "static/js/main.091d85e7.js"
   ]
 }
