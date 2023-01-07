@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portifolio/static/css/main.390a17b0.css",
-    "main.js": "/portifolio/static/js/main.091d85e7.js",
+    "main.css": "/portifolio/static/css/main.9039e07c.css",
+    "main.js": "/portifolio/static/js/main.de78ec7b.js",
     "static/js/787.be55e6d0.chunk.js": "/portifolio/static/js/787.be55e6d0.chunk.js",
     "static/media/mobile.jpg": "/portifolio/static/media/mobile.5045bf89950bd8d8cc90.jpg",
     "static/media/background.jpg": "/portifolio/static/media/background.05092abcd84b97826020.jpg",
@@ -10,6 +10,7 @@
     "static/media/pretaxa.png": "/portifolio/static/media/pretaxa.4bb1290af7e917e3c4fe.png",
     "static/media/calculadoraNutri.png": "/portifolio/static/media/calculadoraNutri.f268272af6590c089fab.png",
     "static/media/arch2.png": "/portifolio/static/media/arch2.9431e8a1195dac2f963e.png",
+    "static/media/git.png": "/portifolio/static/media/git.457822f5ea4520f5ba2c.png",
     "static/media/apps.png": "/portifolio/static/media/apps.5c857bf82b2ee5d36f0f.png",
     "static/media/battery-charging-outline.svg": "/portifolio/static/media/battery-charging-outline.fa65dfa0348968775fde5ad2daabc269.svg",
     "static/media/settings.svg": "/portifolio/static/media/settings.91e822e5c3ae4fe7802e37acc7da8583.svg",
@@ -25,12 +26,12 @@
     "static/media/cafe-filled.svg": "/portifolio/static/media/cafe-filled.5939c6202eec6b5db459cc7deb651084.svg",
     "static/media/lock-closed.svg": "/portifolio/static/media/lock-closed.dbd791137d1f2b5904f7f7f6e63f500a.svg",
     "static/media/close.svg": "/portifolio/static/media/close.e54fd14e2935399deef8fb4b0dda7979.svg",
-    "main.390a17b0.css.map": "/portifolio/static/css/main.390a17b0.css.map",
-    "main.091d85e7.js.map": "/portifolio/static/js/main.091d85e7.js.map",
+    "main.9039e07c.css.map": "/portifolio/static/css/main.9039e07c.css.map",
+    "main.de78ec7b.js.map": "/portifolio/static/js/main.de78ec7b.js.map",
     "787.be55e6d0.chunk.js.map": "/portifolio/static/js/787.be55e6d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.390a17b0.css",
-    "static/js/main.091d85e7.js"
+    "static/css/main.9039e07c.css",
+    "static/js/main.de78ec7b.js"
   ]
 }
