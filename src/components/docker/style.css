@@ -1,0 +1,57 @@
+.mainDocker{
+    position: absolute;
+    min-width: 20vw;
+    max-width: 80vw;
+    min-height:50px;
+    background-color: #3f3f3f;
+    border-radius: 20px; 
+    padding: 5px;
+    left: 0; 
+    right: 0; 
+    bottom: 10px;
+    margin-left: auto; 
+    margin-right: auto;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.divDockerApp{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconDocker{
+    width: 70%;
+    color: white;
+    padding: 10px;
+    border-radius:20px ;
+
+    
+}
+.divDockerApp:hover .iconDocker{
+    
+    background-color: #545252;
+    border-radius:20px ;
+
+}
+.divDockerApp:hover::after {
+    position: absolute;
+    padding: 6px;
+    content: attr(data-name);
+    min-width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    top:-50px;
+    
+    
+    background-color: #232323;
+    visibility: visible;
+}
