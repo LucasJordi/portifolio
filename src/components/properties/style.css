@@ -1,0 +1,135 @@
+.mainProps{
+    position: absolute;
+    width: 30vw;
+    height:70vh;
+    background-color: #fafafa;
+    border-radius: 20px;    
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    top:0; 
+    margin-left: auto; 
+    margin-right: auto;
+
+    margin-top: auto; 
+    margin-bottom: auto; 
+    animation: scale 0.2s forwards;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.1)
+}
+
+
+@keyframes scale {
+    0%   { transform: scale(0.1); opacity:0.0; }    
+    100% { transform: scale(1); opacity:1.0; }
+}
+.propsBar{
+    flex: 1;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.propsContent{
+    flex: 12;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.propsContentTop{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.propsContentBottom{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+.cardProps{
+    width: 90%;
+    height: 50px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+
+}
+.cardProps2{
+    width: 90%;
+    min-height: 50px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 10px;
+
+}
+.pProps{
+    margin: 0;
+    width: 90%;
+    
+}
+.pPropstext1{
+    color: #999999;
+    font-size: 14px;
+}
+.propsIconApp{
+    width: 30%;
+    border-radius: 20px;
+}
+.propsTextTitle{
+    color: #333333;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+.textPropsBar{
+    text-align: center;
+    color: #2f2f2f;
+}
+.propsBtnClose{
+    position: absolute;
+    cursor: pointer;
+    background-color: #d8d8d8;
+    color: #2f2f2f;
+    top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 10px;
+    bottom: 0;
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+}
+.propsBtnClose:hover{
+    background-color: #b7b3b3;
+
+}
