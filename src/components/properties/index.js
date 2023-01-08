@@ -16,6 +16,50 @@ export const Properties=(props)=>{
         console.log(finded)
 
     },[])
+    let mouseUp=false
+    let mouseUpTarget=null
+    let offset = [0,0];
+    let offsetM = [0,0];
+    let offLeft=0
+    let offTop=0
+
+    useEffect(()=>{
+        window.addEventListener("mousedown",(event)=>{
+            mouseUp=true
+            mouseUpTarget=event.target.className
+            const elementPage=document.querySelector(".mainProps")
+            offsetM = [
+                event.clientX-elementPage.offsetLeft,
+                event.clientY-elementPage.offsetTop,
+            ];
+            offTop=elementPage.offsetTop
+            offLeft=elementPage.offsetLeft
+        })
+        window.addEventListener("mouseup",()=>{
+            mouseUp=false
+            mouseUpTarget=null
+            offsetM=[0,0]
+            // offset=[0,0]
+
+            
+           
+
+        })
+        window.addEventListener("mousemove",(event)=>{
+            if(mouseUpTarget==="propsBar"){
+                const elementPage=document.querySelector(".mainProps")                
+                let left=elementPage.style.left
+                let top=elementPage.style.top                
+                const x=event.clientX
+                const y=event.clientY                
+                const tt=event.clientX-offsetM[0]-offLeft
+                elementPage.style.left=(event.clientX-offsetM[0]-offLeft)+"px"
+                elementPage.style.top=(event.clientY-offsetM[1]-offTop)+"px"
+                
+            }
+        })
+
+    },[])
 
 
 

@@ -2,7 +2,7 @@
 import "./style.css"
 import {ReactComponent as BulbIcon} from '../../assets/icon/bulb-outline.svg'
 import {ReactComponent as AppsIcon} from '../../assets/icon/apps.svg'
-import { useState } from "react"
+import { useContext, useState } from "react"
 import pipMusicIcon from "../../assets/apps/pipMusic.png"
 import jupiterlnIcon from "../../assets/apps/jupiterln.png"
 import calculadoraIcon from "../../assets/apps/calculadoraNutri.png"
@@ -13,10 +13,12 @@ import terminalIcon from "../../assets/apps/utilities-terminal.png"
 import breveIcon from "../../assets/apps/breve.png"
 
 import { Properties } from "../properties"
+import { MainContext } from "../../context/mainContext"
 
 export const Docker=(props)=>{
     const [properties,setProperties]=useState(false)
     const [item,setItem]=useState(null)
+    const {setInfoOpen,setInfonItem}=useContext(MainContext)
 
     const [apps,setApps]=useState([
         {
@@ -142,7 +144,6 @@ export const Docker=(props)=>{
 
     return(
         <>
-            {properties&&<Properties setOpen={setProperties} item={item} />}
             <div className="mainDocker">
                 {
                     apps.map((element,index)=>(
@@ -154,10 +155,10 @@ export const Docker=(props)=>{
                             if(element.id===""){
                                 return false
                             }
-                            setProperties(false)
-                            setItem(element)
+                            setInfoOpen(false)
+                            setInfonItem(element)
                             setTimeout(()=>{
-                                setProperties(true)
+                                setInfoOpen(true)
                             },100)
                         }}>
                             {/* <AppsIcon className="iconDocker" /> */}

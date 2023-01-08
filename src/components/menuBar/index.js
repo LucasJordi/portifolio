@@ -9,6 +9,7 @@ import {ReactComponent as CafeFillIcon} from '../../assets/icon/cafe-filled.svg'
 import { useEffect, useState } from 'react';
 import { Float } from '../float';
 import { MenuTools } from '../menuTools';
+import { MainActivity } from '../mainActivityMenu';
 
 
 
@@ -17,6 +18,8 @@ export const MenuBar=()=>{
     const [clickCafe,setClickCafe]=useState(false)
     const [float,setFloat]=useState(false)
     const [menu,setMenu]=useState(false)
+    const [main,setMain]=useState(false)
+
 
     const [textFloat,setTextFloat]=useState("")
 
@@ -28,10 +31,9 @@ export const MenuBar=()=>{
         
         window.addEventListener("click",(event)=>{
            
-                console.log("passou")
+                
                 try{
-                    const element=document.querySelector(".mainMenuTool")
-                    
+                    const element=document.querySelector(".mainMenuTool")                    
                     if(element!=null){
                         let classes=["mainMenuTool","wifiAndOthers"]
                         element.childNodes.forEach(element=>{
@@ -43,12 +45,30 @@ export const MenuBar=()=>{
 
                         }
 
-                    }
+                    }                    
                     
 
                 }catch(e){
                     console.log(e)
                     
+                }
+                try{
+                    const element2=document.querySelector(".mainActivityMenu")
+                    
+                    if(element2!=null){
+                        let classes=["mainActivityMenu","divLogo"]
+                        element2.childNodes.forEach(element=>{
+                            classes.push(element.className)
+                        })
+                        const classesContain=classes.includes(event.target.className)
+                        if(!classesContain){
+                            setMain(false)
+
+                        }
+
+                    }
+                }catch(e){
+
                 }
                 
 
@@ -84,9 +104,14 @@ export const MenuBar=()=>{
         <>
         {float&&<Float text={textFloat}/>}
         {menu && <MenuTools/>}
+        {main && <MainActivity />}
         <div className="bar">
             <div className="cantos">
-                <div className='divLogo'>
+                <div className='divLogo' onClick={()=>{
+                    setTimeout(()=>{
+                        setMain(!main)
+                    },50)
+                }}>
                     <img className='imgLogo' src={logoArch}/>
 
                 </div>
@@ -117,7 +142,7 @@ export const MenuBar=()=>{
                 </div>
 
                 <div className="wifiAndOthers" onClick={()=>{
-                    setTimeout(()=>{setMenu(!menu)},500)
+                    setTimeout(()=>{setMenu(!menu)},50)
                     
                 }} 
                 >

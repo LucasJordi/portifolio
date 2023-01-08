@@ -1,9 +1,15 @@
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import './App.css';
 import { MenuBar } from './components/menuBar';
 import image from "./assets/apps/pipMusic.png"
 import { Docker } from './components/docker';
+import { MainContext,MainContextProvider } from './context/mainContext';
+import { Properties } from './components/properties';
 function App() {
+
+  
+  const {infoOpen,setInfoOpen,infoItem,setInfonItem}=useContext(MainContext)
+
   useEffect(()=>{
 
   },[])
@@ -19,6 +25,7 @@ function App() {
   ]
   return (
     <>
+      {infoOpen&&<Properties setOpen={setInfoOpen} item={infoItem} />}
       <Docker />
     
     <div className="App">
@@ -43,4 +50,12 @@ function App() {
   );
 }
 
-export default App;
+function IndexApp(){
+  return(
+    <MainContextProvider>
+      <App />
+    </MainContextProvider>
+  )
+}
+
+export default IndexApp;
