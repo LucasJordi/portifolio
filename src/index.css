@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 html *{
   font-family: 'Cantarell', sans-serif;
+  user-select: none; /* Standard syntax */
+  
   
 }
 body {
@@ -10,6 +12,7 @@ body {
   background-image: url('./assets/background.jpg');
   display: flex;
   overflow-x: hidden;
+  overflow-y: hidden;
 
 }
 
