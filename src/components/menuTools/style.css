@@ -7,12 +7,16 @@
     padding: 20px; 
     
     right: 7px; 
-    animation: float 0.2s forwards;
+    animation: fadeMenu 0.2s forwards;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
+    top: 5%;
 }
-
+@keyframes fadeMenu {
+    0%   { opacity:0.0; }    
+    100% { opacity:1.0; }
+}
 
 .divMainToolF1{
     flex: 1;
