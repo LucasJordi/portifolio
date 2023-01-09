@@ -5,12 +5,16 @@ import image from "./assets/apps/pipMusic.png"
 import { Docker } from './components/docker';
 import { MainContext,MainContextProvider } from './context/mainContext';
 import { Properties } from './components/properties';
+import { SplashScreen } from './components/splashScreen';
 function App() {
 
   
-  const {infoOpen,setInfoOpen,infoItem,setInfonItem}=useContext(MainContext)
+  const {infoOpen,setInfoOpen,infoItem,setInfonItem,splash,setSplash}=useContext(MainContext)
 
   useEffect(()=>{
+    setTimeout(()=>{
+      setSplash(false)
+    },5000)
 
   },[])
   const apps=[
@@ -25,6 +29,7 @@ function App() {
   ]
   return (
     <>
+    {splash&&<SplashScreen/>}
       
     
     <div className="App">

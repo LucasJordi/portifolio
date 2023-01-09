@@ -7,6 +7,7 @@ export const MainContext=createContext()
 
 export const MainContextProvider=({children})=>{
     const [infoOpen,setInfoOpen]=useState(false)
+    const [splash,setSplash]=useState(true)
     
     const [infoItem,setInfonItem]=useState({
         name:"",            
@@ -24,7 +25,7 @@ export const MainContextProvider=({children})=>{
 
 
     return(
-        <MainContext.Provider value={{infoOpen,setInfoOpen,infoItem,setInfonItem}}>
+        <MainContext.Provider value={{infoOpen,setInfoOpen,infoItem,setInfonItem,splash,setSplash}}>
             {children}
         </MainContext.Provider>
     )
