@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/portifolio/static/css/main.93bcfa6f.css",
-    "main.js": "/portifolio/static/js/main.1b0c9391.js",
+    "main.css": "/portifolio/static/css/main.45946b8e.css",
+    "main.js": "/portifolio/static/js/main.80f839cd.js",
     "static/js/787.be55e6d0.chunk.js": "/portifolio/static/js/787.be55e6d0.chunk.js",
     "static/media/mobile.jpg": "/portifolio/static/media/mobile.5045bf89950bd8d8cc90.jpg",
     "static/media/background.jpg": "/portifolio/static/media/background.05092abcd84b97826020.jpg",
+    "static/media/arch-logo.png": "/portifolio/static/media/arch-logo.d10d2970b71beba97eae.png",
     "static/media/jupiterln.png": "/portifolio/static/media/jupiterln.c97776ed1438b8110737.png",
     "static/media/pipMusic.png": "/portifolio/static/media/pipMusic.366fc7561c57eca02989.png",
     "static/media/pretaxa.png": "/portifolio/static/media/pretaxa.4bb1290af7e917e3c4fe.png",
@@ -26,12 +27,12 @@
     "static/media/cafe-filled.svg": "/portifolio/static/media/cafe-filled.5939c6202eec6b5db459cc7deb651084.svg",
     "static/media/lock-closed.svg": "/portifolio/static/media/lock-closed.dbd791137d1f2b5904f7f7f6e63f500a.svg",
     "static/media/close.svg": "/portifolio/static/media/close.e54fd14e2935399deef8fb4b0dda7979.svg",
-    "main.93bcfa6f.css.map": "/portifolio/static/css/main.93bcfa6f.css.map",
-    "main.1b0c9391.js.map": "/portifolio/static/js/main.1b0c9391.js.map",
+    "main.45946b8e.css.map": "/portifolio/static/css/main.45946b8e.css.map",
+    "main.80f839cd.js.map": "/portifolio/static/js/main.80f839cd.js.map",
     "787.be55e6d0.chunk.js.map": "/portifolio/static/js/787.be55e6d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93bcfa6f.css",
-    "static/js/main.1b0c9391.js"
+    "static/css/main.45946b8e.css",
+    "static/js/main.80f839cd.js"
   ]
 }
