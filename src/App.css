@@ -15,6 +15,7 @@
     height: 97vh;
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 .app1{
     flex:1;

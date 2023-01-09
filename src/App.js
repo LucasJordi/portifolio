@@ -25,8 +25,7 @@ function App() {
   ]
   return (
     <>
-      {infoOpen&&<Properties setOpen={setInfoOpen} item={infoItem} />}
-      <Docker />
+      
     
     <div className="App">
       
@@ -36,6 +35,8 @@ function App() {
       </div>
 
       <div className="Desktop">
+        {infoOpen&&<Properties setOpen={setInfoOpen} item={infoItem} />}
+        <Docker />
         <div className='app1'>
           
 

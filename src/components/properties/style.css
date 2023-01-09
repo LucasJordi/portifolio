@@ -4,10 +4,10 @@
     height:70vh;
     background-color: #fafafa;
     border-radius: 20px;    
-    left: 0; 
+    /* left: 0; 
     right: 0;
     bottom: 0;
-    top:0; 
+    top:0;  */
     margin-left: auto; 
     margin-right: auto;
 
@@ -34,6 +34,8 @@
     background-color: #ebebeb;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    cursor: move;
+
 }
 .propsContent{
     flex: 12;

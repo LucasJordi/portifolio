@@ -22,6 +22,8 @@ export const Properties=(props)=>{
     let offsetM = [0,0];
     let offLeft=0
     let offTop=0
+    let mouseXU=null
+    let mouseYU=null
 
     useEffect(()=>{
         window.addEventListener("mousedown",(event)=>{
@@ -34,38 +36,94 @@ export const Properties=(props)=>{
             ];
             offTop=elementPage.offsetTop
             offLeft=elementPage.offsetLeft
+            console.log(event.clientX)
+            mouseXU=mouseXU!=null? mouseXU:event.clientX
+            mouseYU=mouseYU!=null?mouseYU:event.clientY
         })
         window.addEventListener("mouseup",()=>{
             mouseUp=false
             mouseUpTarget=null
             offsetM=[0,0]
             // offset=[0,0]
-
-            
-           
-
         })
-        window.addEventListener("mousemove",(event)=>{
-            if(mouseUpTarget==="propsBar"){
-                const elementPage=document.querySelector(".mainProps")                
-                let left=elementPage.style.left
-                let top=elementPage.style.top                
-                const x=event.clientX
-                const y=event.clientY                
-                const tt=event.clientX-offsetM[0]-offLeft
-                elementPage.style.left=(event.clientX-offsetM[0]-offLeft)+"px"
-                elementPage.style.top=(event.clientY-offsetM[1]-offTop)+"px"
+        // window.addEventListener("mousemove",(event)=>{
+        //     if(mouseUpTarget==="propsBar"){
+        //         const elementPage=document.querySelector(".mainProps")                
+        //         let left=elementPage.style.left
+        //         let top=elementPage.style.top                
+        //         const x=event.clientX
+        //         const y=event.clientY                
+        //         const leftM=event.clientX-mouseXU
+        //         const topM=event.clientY-mouseYU
+
                 
-            }
+        //         elementPage.style.left=(leftM-100)+"px"
+        //         elementPage.style.top=(topM)+"px"
+                
+        //     }
+        // })
+        window.addEventListener("drag",(event)=>{
+            console.log("drag")
         })
+       
+        
+        const dragElement = (element, dragzone) => {
+            let pos1 = 0,
+              pos2 = 0,
+              pos3 = 0,
+              pos4 = 0;
+        //MouseUp occurs when the user releases the mouse button
+            const dragMouseUp = () => {
+              document.onmouseup = null;
+        //onmousemove attribute fires when the pointer is moving while it is over an element.
+              document.onmousemove = null;
+        
+              element.classList.remove("drag");
+            };
+        
+            const dragMouseMove = (event) => {
+        
+              event.preventDefault();
+        //clientX property returns the horizontal coordinate of the mouse pointer
+              pos1 = pos3 - event.clientX;
+        //clientY property returns the vertical coordinate of the mouse pointer
+              pos2 = pos4 - event.clientY;
+              pos3 = event.clientX;
+              pos4 = event.clientY;
+        //offsetTop property returns the top position relative to the parent
+              element.style.top = `${element.offsetTop - pos2}px`;
+              element.style.left = `${element.offsetLeft - pos1}px`;
+            };
+        
+            const dragMouseDown = (event) => {
+              event.preventDefault();
+        
+              pos3 = event.clientX;
+              pos4 = event.clientY;
+        
+              element.classList.add("drag");
+        
+              document.onmouseup = dragMouseUp;
+              document.onmousemove = dragMouseMove;
+            };
+        
+            dragzone.onmousedown = dragMouseDown;
+          };
+        
+          const dragable = document.getElementById("dragable"),
+            dragzone = document.getElementById("dragzone");
+        
+          dragElement(dragable, dragzone);
+        
+        
 
     },[])
 
 
 
     return(
-        <div className="mainProps">
-            <div className="propsBar">
+        <div className="mainProps" id="dragable">
+            <div className="propsBar" id="dragzone">
                 <p className="textPropsBar">Propriedades</p>
                 <div className="propsBtnClose" onClick={()=>{
                     props.setOpen(false)
