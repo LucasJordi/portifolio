@@ -17,6 +17,9 @@ export const MainContextProvider=({children})=>{
         made:"",
         link:window.location.host 
     })
+    useEffect(()=>{
+
+    },[])
 
     
     

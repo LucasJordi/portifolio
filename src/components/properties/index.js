@@ -16,36 +16,9 @@ export const Properties=(props)=>{
         console.log(finded)
 
     },[])
-    let mouseUp=false
-    let mouseUpTarget=null
-    let offset = [0,0];
-    let offsetM = [0,0];
-    let offLeft=0
-    let offTop=0
-    let mouseXU=null
-    let mouseYU=null
-
-    useEffect(()=>{
+    
+    useEffect(()=>{        
         
-        // window.addEventListener("mousemove",(event)=>{
-        //     if(mouseUpTarget==="propsBar"){
-        //         const elementPage=document.querySelector(".mainProps")                
-        //         let left=elementPage.style.left
-        //         let top=elementPage.style.top                
-        //         const x=event.clientX
-        //         const y=event.clientY                
-        //         const leftM=event.clientX-mouseXU
-        //         const topM=event.clientY-mouseYU
-
-                
-        //         elementPage.style.left=(leftM-100)+"px"
-        //         elementPage.style.top=(topM)+"px"
-                
-        //     }
-        // })
-        window.addEventListener("drag",(event)=>{
-            
-        })
        
         
         const dragElement = (element, dragzone) => {
