@@ -13,11 +13,11 @@ export const MainActivity=(props)=>{
 
     const [sobre,setSobre]=useState({
         name:"Sobre",            
-        desc:"Bem vindo ao meu portifólio! \n Esse portifólio foi feito tomando como base  meu desktop e como uma forma de me divertir usando o ReactJs e outras ferramentas como Html, Css e Javascript. \n foi feito com bastante carinho.",
+        desc:"Bem vindo ao meu portifólio! \n Esse portifólio foi feito tomando como base  meu desktop e como uma forma de me divertir usando o ReactJs e outras ferramentas como Html, Css e Javascript. \n Foi feito com bastante carinho e reúne várias das minhas criações.",
         id:"1",
         icon:"",
         made:"ReactJs",
-        link:window.location.host 
+        link:document.URL
     })
     
 
