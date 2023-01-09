@@ -26,26 +26,7 @@ export const Properties=(props)=>{
     let mouseYU=null
 
     useEffect(()=>{
-        window.addEventListener("mousedown",(event)=>{
-            mouseUp=true
-            mouseUpTarget=event.target.className
-            const elementPage=document.querySelector(".mainProps")
-            offsetM = [
-                event.clientX-elementPage.offsetLeft,
-                event.clientY-elementPage.offsetTop,
-            ];
-            offTop=elementPage.offsetTop
-            offLeft=elementPage.offsetLeft
-            console.log(event.clientX)
-            mouseXU=mouseXU!=null? mouseXU:event.clientX
-            mouseYU=mouseYU!=null?mouseYU:event.clientY
-        })
-        window.addEventListener("mouseup",()=>{
-            mouseUp=false
-            mouseUpTarget=null
-            offsetM=[0,0]
-            // offset=[0,0]
-        })
+        
         // window.addEventListener("mousemove",(event)=>{
         //     if(mouseUpTarget==="propsBar"){
         //         const elementPage=document.querySelector(".mainProps")                
@@ -63,7 +44,7 @@ export const Properties=(props)=>{
         //     }
         // })
         window.addEventListener("drag",(event)=>{
-            console.log("drag")
+            
         })
        
         
@@ -113,7 +94,7 @@ export const Properties=(props)=>{
           const dragable = document.getElementById("dragable"),
             dragzone = document.getElementById("dragzone");
         
-          dragElement(dragable, dragzone);
+          try{dragElement(dragable, dragzone);}catch(e){}
         
         
 

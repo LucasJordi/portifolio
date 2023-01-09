@@ -29,6 +29,7 @@ export const MainActivity=(props)=>{
             <div className="menuItemActivityMenu menuItemActivityMenuBorder">
                 <div className="menuItemActivityMenuItem" onClick={()=>{
                     setInfoOpen(true)
+                    console.log("fo")
                     setInfonItem(sobre)
                 }}>
                     <p className="textActivityMenu">Sobre meu sistema</p>
