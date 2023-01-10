@@ -4,6 +4,7 @@
 html *{
   font-family: 'Cantarell', sans-serif;
   user-select: none; /* Standard syntax */
+  font-size: 0.9vw;
   
   
 }
