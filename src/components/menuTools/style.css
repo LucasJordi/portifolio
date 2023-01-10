@@ -115,7 +115,7 @@
     border-radius: 20px;
 }
 .radioMenuTool::-moz-range-progress{
-    /* background-color: #3584e4; */
+    background-color: #3584e4;
     height: 5px;
 }
 .iconTopMenuTool:hover{
