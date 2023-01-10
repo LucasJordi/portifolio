@@ -93,7 +93,7 @@
     height: 40%;
     
     background-color: white;    
-    animation: dotText 1s 8.5s infinite;
+    animation: dotText 1s infinite;
     animation-timing-function: linear;
     position: absolute;
 }
