@@ -18,7 +18,7 @@ import { MainContext } from "../../context/mainContext"
 export const Docker=(props)=>{
     const [properties,setProperties]=useState(false)
     const [item,setItem]=useState(null)
-    const {setInfoOpen,setInfonItem}=useContext(MainContext)
+    const {setInfoOpen,setInfonItem,terminalOpen,setTerminalOpen}=useContext(MainContext)
 
     const [apps,setApps]=useState([
         {
@@ -149,8 +149,15 @@ export const Docker=(props)=>{
                     apps.map((element,index)=>(
                         <div key={element.desc+index} className="divDockerApp" data-name={element.name} onClick={()=>{
                             
-                            if(element.id==="all"||element.id==="terminal"){
+                            if(element.id==="all"){
                                 return false
+                            }
+                            if(element.id==="terminal"){
+                                setTerminalOpen(false)
+                                setTimeout(()=>{
+                                    setTerminalOpen(true)
+                                },100)
+                                return true
                             }
                             if(element.id===""){
                                 return false

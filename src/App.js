@@ -6,10 +6,11 @@ import { Docker } from './components/docker';
 import { MainContext,MainContextProvider } from './context/mainContext';
 import { Properties } from './components/properties';
 import { SplashScreen } from './components/splashScreen';
+import { Terminal } from './components/terminal';
 function App() {
 
   
-  const {infoOpen,setInfoOpen,infoItem,setInfonItem,splash,setSplash}=useContext(MainContext)
+  const {infoOpen,terminalOpen,setTerminalOpen,setInfoOpen,infoItem,setInfonItem,splash,setSplash}=useContext(MainContext)
 
   useEffect(()=>{
     setTimeout(()=>{
@@ -41,6 +42,7 @@ function App() {
 
       <div className="Desktop">
         {infoOpen&&<Properties setOpen={setInfoOpen} item={infoItem} />}
+        {terminalOpen&& <Terminal setOpen={setTerminalOpen} /> }
         <Docker />
         <div className='app1'>
           

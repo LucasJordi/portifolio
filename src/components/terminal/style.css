@@ -1,0 +1,135 @@
+.mainPropsTerminal{
+    position: absolute;
+    width: 800px;
+    height:50vh;
+    background-color: #1a1c23;
+    border-radius: 10px;    
+    /* left: 0; 
+    right: 0;
+    bottom: 0;
+    top:0;  */
+    margin-left: auto; 
+    margin-right: auto;
+    color: white;
+
+    margin-top: auto; 
+    margin-bottom: auto; 
+    animation: scale 0.2s forwards;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.1)
+}
+
+
+@keyframes scale {
+    0%   { transform: scale(0.1); opacity:0.0; }    
+    100% { transform: scale(1); opacity:1.0; }
+}
+.propsBarTerminal{
+    flex: 1;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #181a20;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: move;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.propsContentTerminal{
+    flex: 12;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.cardProps2{
+    width: 90%;
+    min-height: 50px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 10px;
+
+}
+.propsBtnCloseTerminal{
+    position: absolute;
+    cursor: pointer;
+    background-color: #d8d8d8;
+    color: #2f2f2f;
+    top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 10px;
+    bottom: 0;
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+}
+.propsBtnClose:hover{
+    background-color: #b7b3b3;
+
+}
+
+
+.terminalInp::after{
+    content: "";
+    width: 7px;
+    height: 40%;
+    
+    background-color: white;    
+    animation: dotText 1s 8.5s infinite;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+@keyframes dotText {
+    0% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+}
+.inPutTerminal,.inPutTerminal:focus{
+    width: auto;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    caret-color: transparent;
+
+    margin-left: 5px;
+}
+
+.divTerminalText{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}

@@ -8,7 +8,7 @@ export const MainContext=createContext()
 export const MainContextProvider=({children})=>{
     const [infoOpen,setInfoOpen]=useState(false)
     const [splash,setSplash]=useState(true)
-    
+    const [terminalOpen,setTerminalOpen]=useState(false)
     const [infoItem,setInfonItem]=useState({
         name:"",            
         desc:"",
@@ -28,7 +28,7 @@ export const MainContextProvider=({children})=>{
 
 
     return(
-        <MainContext.Provider value={{infoOpen,setInfoOpen,infoItem,setInfonItem,splash,setSplash}}>
+        <MainContext.Provider value={{terminalOpen,setTerminalOpen,infoOpen,setInfoOpen,infoItem,setInfonItem,splash,setSplash}}>
             {children}
         </MainContext.Provider>
     )
