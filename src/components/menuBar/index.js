@@ -36,10 +36,14 @@ export const MenuBar=()=>{
                     const element=document.querySelector(".mainMenuTool")                    
                     if(element!=null){
                         let classes=["mainMenuTool","wifiAndOthers"]
-                        element.childNodes.forEach(element=>{
-                            classes.push(element.className)
+                        const nodes=element.querySelectorAll("*")
+                        nodes.forEach(elementChild=>{
+                            classes.push(elementChild.className)
+                            
+                            
                         })
                         const classesContain=classes.includes(event.target.className)
+                       
                         if(!classesContain){
                             setMenu(false)
 
@@ -61,6 +65,7 @@ export const MenuBar=()=>{
                             classes.push(element.className)
                         })
                         const classesContain=classes.includes(event.target.className)
+                        
                         if(!classesContain){
                             setMain(false)
 

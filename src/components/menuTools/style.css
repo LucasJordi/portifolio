@@ -1,7 +1,7 @@
 .mainMenuTool{
     position: absolute;
-    width: 400px;
-    height:300px;
+    width: 20vw;
+    min-height:300px;
     background-color: #303030;
     border-radius: 40px;  
     padding: 20px; 
@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     top: 5%;
+    z-index: 100;
 }
 @keyframes fadeMenu {
     0%   { opacity:0.0; }    
@@ -26,6 +27,8 @@
 }
 .divMainToolF1Flex1{
     flex: 1;
+    display: flex;
+    align-items: center;
 }
 .divMainToolF1Flex2{
     flex: 1.2;
@@ -37,11 +40,39 @@
 }
 .divMainToolF2{
     flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuToolSoundBrig{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 .divMainToolF3{
     flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     
 }
+.cardMenuTool{
+    width: 48%;
+    background: #3a3a3a;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
 
 .iconTopMenuTool{
     width: 10%;
@@ -52,8 +83,51 @@
     position: relative;
     cursor: pointer;
 }
+.iconTopMenuTool2{
+    width: 8%;
+    color: white;
+    border-radius: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.iconTopMenuTool3{
+    width: 10%;
+    color: white;
+    position: relative;
+    padding: 15px;
+
+}
+.radioMenuTool{
+    width: 90%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255,1);
+}
+.radioMenuTool::-moz-range-thumb{
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+}
+.radioMenuTool::-webkit-slider-runnable-track   {
+    background-color: black;
+    border-radius: 20px;
+}
+.radioMenuTool::-moz-range-progress{
+    background-color: #3584e4;
+    height: 5px;
+}
 .iconTopMenuTool:hover{
     background-color: #545252;
     
+}
+.cardMenuTool:hover{
+    background-color: #545252;
+
+
+}
+
+.menuCardText{
+    color: white;
 }
 
