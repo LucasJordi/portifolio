@@ -99,7 +99,7 @@ export const Properties=(props)=>{
 
                 </div>
                 <div className="propsContentBottom">
-                    <div className="cardProps" onClick={()=>{
+                    {props.item.link!=""&&<div className="cardProps" onClick={()=>{
                         window.open(props.item.link)
                     }}>
                         <p  className="pProps pPropstext1">
@@ -109,7 +109,7 @@ export const Properties=(props)=>{
                             {props.item.link.slice(0,40)}...
                         </p>
 
-                    </div>
+                    </div>}
 
                     <div className="cardProps2" >
                         <p  className="pProps pPropstext1">

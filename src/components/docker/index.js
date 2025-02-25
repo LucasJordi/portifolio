@@ -9,6 +9,7 @@ import calculadoraIcon from "../../assets/apps/calculadoraNutri.png"
 import preTaxaIcon from "../../assets/apps/pretaxa.png"
 import appsIconPng from "../../assets/apps/apps.png"
 import gitIcon from "../../assets/apps/git.png"
+import archIcon from "../../assets/arch2.png"
 import terminalIcon from "../../assets/apps/utilities-terminal.png"
 import breveIcon from "../../assets/apps/breve.png"
 
@@ -19,6 +20,26 @@ export const Docker=(props)=>{
     const [properties,setProperties]=useState(false)
     const [item,setItem]=useState(null)
     const {setInfoOpen,setInfonItem,terminalOpen,setTerminalOpen}=useContext(MainContext)
+    useState(()=>{
+        const wellcome = {
+            name:"Bem vindo ao meu portifólio",            
+            desc:`Fico muito feliz que você tenha chegado até aqui! Este espaço é um reflexo da minha paixão e dedicação ao meu trabalho. Ao longo dessa jornada, busquei sempre me reinventar, explorar novas possibilidades e entregar o melhor em cada projeto. Aqui você encontrará uma seleção do que considero o meu melhor trabalho, que transmite minhas habilidades, experiências e a visão que tenho do que faço.
+                Sinta-se à vontade para explorar os projetos e conhecer um pouco mais sobre o meu processo criativo. Caso você tenha alguma dúvida ou queira conversar sobre como podemos colaborar, não hesite em entrar em contato!
+                Obrigado por sua visita, e espero que goste do que encontrou aqui.
+                Se quiser acessar as minhas criações basta clicar no menu abaixo.
+                `,
+            id:"1",
+            icon:archIcon,
+            made:"React Native",
+            link:""
+        }
+        setInfoOpen(false)
+        setInfonItem(wellcome)
+        setTimeout(()=>{
+            setInfoOpen(true)
+        },100)
+
+    },[])
 
     const [apps,setApps]=useState([
         {
