@@ -95,6 +95,11 @@
 .pProps{
     margin: 0;
     width: 90%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    text-align: justify;
+    /* text-justify: inter-word; */
     
 }
 .pPropstext1{
